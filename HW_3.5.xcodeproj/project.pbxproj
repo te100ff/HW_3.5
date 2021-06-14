@@ -11,6 +11,12 @@
 		18DE76C92677E40500CC6985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE76C82677E40500CC6985 /* ContentView.swift */; };
 		18DE76CB2677E40500CC6985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DE76CA2677E40500CC6985 /* Assets.xcassets */; };
 		18DE76CE2677E40500CC6985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DE76CD2677E40500CC6985 /* Preview Assets.xcassets */; };
+		18DE76D62677E46100CC6985 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE76D52677E46100CC6985 /* Person.swift */; };
+		18DE76D82677E46D00CC6985 /* Data Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE76D72677E46D00CC6985 /* Data Manager.swift */; };
+		18DE76DA2677E89600CC6985 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE76D92677E89600CC6985 /* HomeScreen.swift */; };
+		18DE76DC2677EDE500CC6985 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE76DB2677EDE500CC6985 /* Numbers.swift */; };
+		18DE76DE2677F2A600CC6985 /* NumbersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE76DD2677F2A600CC6985 /* NumbersSection.swift */; };
+		18DE76E02677FE2400CC6985 /* ListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE76DF2677FE2400CC6985 /* ListHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		18DE76CA2677E40500CC6985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18DE76CD2677E40500CC6985 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18DE76CF2677E40500CC6985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DE76D52677E46100CC6985 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		18DE76D72677E46D00CC6985 /* Data Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Manager.swift"; sourceTree = "<group>"; };
+		18DE76D92677E89600CC6985 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		18DE76DB2677EDE500CC6985 /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		18DE76DD2677F2A600CC6985 /* NumbersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersSection.swift; sourceTree = "<group>"; };
+		18DE76DF2677FE2400CC6985 /* ListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,12 @@
 			children = (
 				18DE76C62677E40500CC6985 /* HW_3_5App.swift */,
 				18DE76C82677E40500CC6985 /* ContentView.swift */,
+				18DE76DB2677EDE500CC6985 /* Numbers.swift */,
+				18DE76DF2677FE2400CC6985 /* ListHeader.swift */,
+				18DE76DD2677F2A600CC6985 /* NumbersSection.swift */,
+				18DE76D52677E46100CC6985 /* Person.swift */,
+				18DE76D92677E89600CC6985 /* HomeScreen.swift */,
+				18DE76D72677E46D00CC6985 /* Data Manager.swift */,
 				18DE76CA2677E40500CC6985 /* Assets.xcassets */,
 				18DE76CF2677E40500CC6985 /* Info.plist */,
 				18DE76CC2677E40500CC6985 /* Preview Content */,
@@ -138,7 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DE76E02677FE2400CC6985 /* ListHeader.swift in Sources */,
+				18DE76D62677E46100CC6985 /* Person.swift in Sources */,
+				18DE76DA2677E89600CC6985 /* HomeScreen.swift in Sources */,
+				18DE76DC2677EDE500CC6985 /* Numbers.swift in Sources */,
 				18DE76C92677E40500CC6985 /* ContentView.swift in Sources */,
+				18DE76DE2677F2A600CC6985 /* NumbersSection.swift in Sources */,
+				18DE76D82677E46D00CC6985 /* Data Manager.swift in Sources */,
 				18DE76C72677E40500CC6985 /* HW_3_5App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
