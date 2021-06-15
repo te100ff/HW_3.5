@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NumbersSection: View {
+struct ListRow: View {
     let image: Contacts
     let info: String
     
@@ -27,6 +27,6 @@ struct NumbersSection: View {
 
 struct NumbersRow_Previews: PreviewProvider {
     static var previews: some View {
-        NumbersSection(image: .email, info: "Email")
+        ListRow(image: .email, info: "Email")
     }
 }

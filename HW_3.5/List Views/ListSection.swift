@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListHeader: View {
+struct ListSection: View {
     let fullName: String
     
     var body: some View {
@@ -20,6 +20,6 @@ struct ListHeader: View {
 
 struct ListHeader_Previews: PreviewProvider {
     static var previews: some View {
-        ListHeader(fullName: "Person")
+        ListSection(fullName: "Person")
     }
 }

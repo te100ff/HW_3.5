@@ -11,8 +11,14 @@ struct HomeScreen: View {
     let contacts = Person.getContactList()
     
     var body: some View {
-        List(contacts, id: \.self) { contact in
-            Text("\(contact.fullName)")
+        
+        NavigationView {
+            List(contacts, id: \.self) { contact in
+                NavigationLink(destination: Profile(person: contact)) {
+                    Text("\(contact.fullName)")
+                }
+            }
+            .navigationBarTitle("Contact List")
         }
     }
 }

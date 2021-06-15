@@ -16,9 +16,9 @@ struct Numbers: View {
         
         List {
             ForEach(contacts, id: \.self) { contact in
-                Section(header: ListHeader(fullName: contact.fullName)) {
-                    NumbersSection(image: .phone, info: contact.phoneNumber)
-                    NumbersSection(image: .email, info: contact.email)
+                Section(header: ListSection(fullName: contact.fullName)) {
+                    ListRow(image: .phone, info: contact.phoneNumber)
+                    ListRow(image: .email, info: contact.email)
                         
                         
                 }
