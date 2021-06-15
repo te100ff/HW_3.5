@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    let contacts = Person.getContactList()
+    let contacts: [Person]
     
     var body: some View {
         
@@ -25,6 +25,6 @@ struct HomeScreen: View {
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen()
+        HomeScreen(contacts: Person.getContactList())
     }
 }

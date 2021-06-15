@@ -11,18 +11,13 @@ struct ListRow: View {
     let image: Contacts
     let info: String
     
-    
-    
     var body: some View {
-       
         HStack {
             Image(systemName: image.rawValue)
                 .foregroundColor(.blue)
             Text("\(info)")
         }
-            
-        }
-    
+    }
 }
 
 struct NumbersRow_Previews: PreviewProvider {

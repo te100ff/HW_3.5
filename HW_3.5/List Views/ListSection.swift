@@ -14,6 +14,7 @@ struct ListSection: View {
         HStack {
             Image(systemName: "person.fill")
             Text("\(fullName)")
+                .textCase(.none)
         }
     }
 }

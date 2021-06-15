@@ -12,20 +12,22 @@ struct Profile: View {
     
     var body: some View {
         VStack(spacing: 30) {
-                Image(systemName: "person.fill")
-                    .resizable()
-                    .frame(width: 150, height: 150, alignment: .center)
-               
+            Image(systemName: "person.fill")
+                .resizable()
+                .frame(width: 100, height: 100, alignment: .center)
+                .overlay(Circle()
+                            .stroke(Color.black, lineWidth: 4)
+                            .frame(width: 150, height: 150)
+                )
+            
             Divider()
-            HStack {
-                VStack(alignment: .leading, spacing: 15) {
-                    ListRow(image: .phone, info: person.phoneNumber)
-                    ListRow(image: .email, info: person.email)
-                }
-                .font(.title)
-                Spacer()
+            
+            List {
+                ListRow(image: .phone, info: person.phoneNumber)
+                ListRow(image: .email, info: person.email)
             }
-            Divider()
+            .font(.subheadline)
+            
             Spacer()
         }
         .padding()

@@ -8,30 +8,26 @@
 import SwiftUI
 
 struct Numbers: View {
-    
-    let contacts = Person.getContactList()
+    let contacts: [Person]
     
     var body: some View {
-
-        
-        List {
-            ForEach(contacts, id: \.self) { contact in
-                Section(header: ListSection(fullName: contact.fullName)) {
-                    ListRow(image: .phone, info: contact.phoneNumber)
-                    ListRow(image: .email, info: contact.email)
-                        
-                        
+        NavigationView {
+            List {
+                ForEach(contacts, id: \.self) { contact in
+                    Section(header: ListSection(fullName: contact.fullName)) {
+                        ListRow(image: .phone, info: contact.phoneNumber)
+                        ListRow(image: .email, info: contact.email)
+                    }
                 }
-               
             }
+            .navigationTitle("Contacts info")
         }
-        
     }
 }
-    
-    struct Numbers_Previews: PreviewProvider {
-        static var previews: some View {
-            Numbers()
-        }
+
+struct Numbers_Previews: PreviewProvider {
+    static var previews: some View {
+        Numbers(contacts: Person.getContactList())
     }
+}
 
