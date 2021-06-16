@@ -15,7 +15,7 @@ struct HomeScreen: View {
         NavigationView {
             List(contacts, id: \.self) { contact in
                 NavigationLink(destination: Profile(person: contact)) {
-                    Text("\(contact.fullName)")
+                    Text(contact.fullName)
                 }
             }
             .navigationBarTitle("Contact List")

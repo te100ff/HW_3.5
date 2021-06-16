@@ -14,8 +14,9 @@ struct Profile: View {
         VStack(spacing: 30) {
             Image(systemName: "person.fill")
                 .resizable()
-                .frame(width: 100, height: 100, alignment: .center)
-                .overlay(Circle()
+                .frame(width: 100, height: 100)
+                .overlay(
+                    Circle()
                             .stroke(Color.black, lineWidth: 4)
                             .frame(width: 150, height: 150)
                 )
@@ -31,12 +32,12 @@ struct Profile: View {
             Spacer()
         }
         .padding()
-        .navigationBarTitle("\(person.fullName)")
+        .navigationBarTitle(person.fullName)
     }
 }
 
 struct Profile_Previews: PreviewProvider {
     static var previews: some View {
-        Profile(person: Person.getContactList()[0])
+        Profile(person: Person.getContactList().first!)
     }
 }
