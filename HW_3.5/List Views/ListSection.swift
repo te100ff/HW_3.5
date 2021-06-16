@@ -12,7 +12,7 @@ struct ListSection: View {
     
     var body: some View {
         HStack {
-            Image(systemName: "person.fill")
+            Image(systemName: "\(Contacts.person.rawValue)")
             Text("\(fullName)")
                 .textCase(.none)
         }
